@@ -1,0 +1,17 @@
+<%= link_to edit_flat_path(@flat.id), class: 'pull-right btn btn-default' do %>
+  <i class="fa fa-pencil"></i> Edit this flat
+<% end %>
+
+<h1><%= @flat.name %></h1>
+
+<p class="well"><%= @flat.address %></p>
+<p class="well"><%= @flat.description %></p>
+<p class="well"><%= @flat.price_per_night %></p>
+<p class="well"><%= @flat.number_of_guests %></p>
+
+<hr>
+
+<%= link_to flats_path do %>
+  <i class="fa fa-history"></i> Back to flat list
+<% end %>
+
